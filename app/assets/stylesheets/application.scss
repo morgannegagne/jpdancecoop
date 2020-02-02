@@ -1,0 +1,71 @@
+@import "variables";
+@import "pages/_about";
+@import "pages/_home";
+@import "pages/_classes";
+
+body {
+  margin: 0;
+  /* font-family: "Noto Sans JP", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Cambay", sans-serif; */
+  font-family: "Muli", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+#hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url("/assets/banner.jpg");
+  height: 300px;
+  position: relative;
+}
+
+#app-bar {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  padding: 24px;
+  width: 100%;
+}
+
+#social-media-links {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+#logo {
+  height: 180px;
+  margin-right: 10px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+#navlinks {
+  text-transform: uppercase;
+  align-self: flex-end;
+  flex: 1 1 auto;
+}
+
+.navlink {
+  margin-right: 4px;
+}
+
+#facebook {
+  height: 24px;
+}
+
+#email {
+  height: 20px;
+}
+
+.page-content {
+  padding: 48px;
+}

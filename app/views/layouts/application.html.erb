@@ -4,7 +4,7 @@
     <title>JP Dance Co-op</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cambay|Montserrat|Muli&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,11 +13,11 @@
     <div id="app-bar">
       <img id="logo" alt="JP Dance Co-op logo" src="/assets/logo.png"></img>
       <div id="navlinks">
-        <span class="navlink">Home</span>
-        <span class="navlink">About</span>
-        <span class="navlink">Classes+Events</span>
-        <span class="navlink">Gallery</span>
-        <span class="navlink">Contact</span>
+        <a href="/" class="navlink">Home</a>
+        <a href="/about" class="navlink">About</a>
+        <a href="/classes" class="navlink">Classes+Events</a>
+        <a href="/photos" class="navlink">Gallery</a>
+        <a href="/contact" class="navlink">Contact</a>
       </div>
       <div id="social-media-links">
         <a href="mailto:JPDanceCoop@gmail.com">
@@ -29,7 +29,9 @@
         </div>
     </div>
 
-    <div id="page">
+    <div id="hero-image"></div>
+
+    <div class="page-content">
       <%= yield %>
     </div>
   </body>
