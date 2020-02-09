@@ -16,5 +16,5 @@ require("jquery");
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-require("lightbox2/src/css/lightbox.css");
+require("lightbox2/dist/css/lightbox.min.css");
 import lightbox from "lightbox2";
