@@ -11,7 +11,7 @@
 
   <body>
     <div id="app-bar">
-      <img id="logo" alt="JP Dance Co-op logo" src="logo.png"></img>
+      <%= image_tag "logo.png", alt: "JP Dance Co-op logo", id: "logo" %>
       <div id="navlinks">
         <a href="/" class="navlink">Home</a>
         <a href="/about" class="navlink">About</a>
@@ -21,10 +21,10 @@
       </div>
       <div id="social-media-links">
         <a href="mailto:JPDanceCoop@gmail.com">
-          <img id="email" src="email.png"></img>
+          <%= image_tag "email.png", id: "email" %>
         </a>
         <a href="https://www.facebook.com/JPDanceCoop/">
-          <img id="facebook" src="facebook.svg"></img>
+          <%= image_tag "facebook.svg", id: "facebook" %>
         </a>
         </div>
     </div>

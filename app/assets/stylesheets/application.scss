@@ -2,6 +2,7 @@
 @import "pages/_about";
 @import "pages/_home";
 @import "pages/_classes";
+@import "pages/_photos";
 
 body {
   margin: 0;
@@ -22,7 +23,7 @@ a:hover {
 
 #hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: url("/banner.jpg");
+  background-image: url("/assets/banner.jpg");
   height: 300px;
   position: relative;
 }
