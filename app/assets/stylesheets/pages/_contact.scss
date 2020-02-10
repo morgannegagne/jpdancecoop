@@ -1,0 +1,16 @@
+.contact__info {
+  display: flex;
+
+  :first-child {
+    margin-right: 12px;
+  }
+}
+
+.contact__link {
+  color: $accent-color;
+}
+
+.contact__location-header {
+  font-size: 18px;
+  font-weight: bold;
+}

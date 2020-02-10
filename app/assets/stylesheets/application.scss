@@ -3,10 +3,8 @@
 
 body {
   margin: 0;
-  /* font-family: "Noto Sans JP", sans-serif; */
-  /* font-family: "Montserrat", sans-serif; */
-  /* font-family: "Cambay", sans-serif; */
-  font-family: "Muli", sans-serif;
+  font-family: "Asap", sans-serif;
+  min-width: 768px;
 }
 
 a {
@@ -53,7 +51,11 @@ a:hover {
 }
 
 .navlink {
-  margin-right: 4px;
+  margin-right: 12px;
+}
+
+.navlink.active {
+  color: $accent-color;
 }
 
 #facebook {
@@ -66,4 +68,13 @@ a:hover {
 
 .page-content {
   padding: 48px;
+}
+
+.page-title {
+  border-bottom: 4px solid $accent-color;
+  margin-top: 0;
+}
+
+.tagline {
+  margin-top: 0;
 }
