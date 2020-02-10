@@ -1,7 +1,7 @@
 .contact__info {
   display: flex;
 
-  :first-child {
+  > :first-child {
     margin-right: 12px;
   }
 }
