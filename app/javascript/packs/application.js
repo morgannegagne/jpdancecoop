@@ -18,3 +18,7 @@ require("jquery");
 
 require("lightbox2/dist/css/lightbox.min.css");
 import lightbox from "lightbox2";
+
+document.addEventListener("turbolinks:load", function(event) {
+  lightbox.init();
+});
