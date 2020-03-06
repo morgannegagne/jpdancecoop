@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  font-family: "Asap", sans-serif;
+  font-family: "Roboto", serif;
   min-width: 768px;
 }
 
@@ -16,6 +16,14 @@ a:hover {
   font-weight: bold;
 }
 
+h1 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 21px;
+}
+
 #hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-image: url("/banner.jpg");
@@ -24,34 +32,32 @@ a:hover {
 }
 
 #app-bar {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  height: 120px;
-  padding: 24px 24px 12px;
-  width: 100%;
+  padding: 24px;
 }
 
 #social-media-links {
-  align-self: flex-end;
-  justify-self: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #logo {
-  height: 120px;
-  margin-right: 10px;
-  margin-top: 10px;
-  z-index: 1;
+  height: 150px;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+  position: relative;
 }
 
 #navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
   text-transform: uppercase;
-  align-self: flex-end;
-  flex: 1 1 auto;
-}
-
-.navlink {
-  margin-right: 12px;
 }
 
 .navlink.active {
@@ -67,7 +73,7 @@ a:hover {
 }
 
 .page-content {
-  padding: 48px;
+  padding: 0 48px;
 }
 
 .page-title {

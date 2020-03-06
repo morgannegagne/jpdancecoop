@@ -4,7 +4,7 @@
     <title>JP Dance Co-op</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Asap|Roboto&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -12,25 +12,24 @@
 
   <body>
     <div id="app-bar">
-      <%= image_tag "logo.png", alt: "JP Dance Co-op logo", id: "logo" %>
+      <div id="logo-container">
+        <%= image_tag "logo.png", alt: "JP Dance Co-op logo", id: "logo" %>
+        <div id="social-media-links">
+          <a href="mailto:JPDanceCoop@gmail.com">
+            <%= image_tag "email.png", id: "email" %>
+          </a>
+          <a href="https://www.facebook.com/JPDanceCoop/">
+            <%= image_tag "facebook.svg", id: "facebook" %>
+          </a>
+        </div>
+      </div>
       <div id="navlinks">
         <%= active_link_to "Home", "/", active: :exclusive, class: "navlink" %>
         <%= active_link_to "About", "/about", class: "navlink" %>
         <%= active_link_to "Classes+Events", "/classes", class: "navlink" %>
-        <%= active_link_to "Gallery", "/photos", class: "navlink" %>
         <%= active_link_to "Contact", "/contact", class: "navlink" %>
       </div>
-      <div id="social-media-links">
-        <a href="mailto:JPDanceCoop@gmail.com">
-          <%= image_tag "email.png", id: "email" %>
-        </a>
-        <a href="https://www.facebook.com/JPDanceCoop/">
-          <%= image_tag "facebook.svg", id: "facebook" %>
-        </a>
-        </div>
     </div>
-
-    <div id="hero-image"></div>
 
     <div class="page-content">
       <%= yield %>
