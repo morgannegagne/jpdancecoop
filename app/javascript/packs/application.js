@@ -17,8 +17,17 @@ require("jquery");
 // const imagePath = (name) => images(name, true)
 
 require("lightbox2/dist/css/lightbox.min.css");
+require("@glidejs/glide/dist/css/glide.core.min.css");
+require("@glidejs/glide/dist/css/glide.theme.min.css");
 import lightbox from "lightbox2";
+import Glide from "@glidejs/glide";
 
 document.addEventListener("turbolinks:load", function(event) {
   lightbox.init();
+
+  new Glide(".glide", {
+    type: "carousel",
+    perView: 3,
+    focusAt: "center"
+  }).mount();
 });

@@ -8,6 +8,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('logo.png') %>
   </head>
 
   <body>
@@ -31,8 +32,22 @@
       </div>
     </div>
 
-    <div class="page-content">
+    <div id="page-content">
       <%= yield %>
+    </div>
+
+    <div id="footer">
+      <div>
+        © JP Dance Co-Op, 2020 | jpdancecoop@gmail.com
+      </div>
+      <div>
+        <a href="mailto:JPDanceCoop@gmail.com">
+          <%= image_tag "email.png", id: "email" %>
+        </a>
+        <a href="https://www.facebook.com/JPDanceCoop/">
+          <%= image_tag "facebook.svg", id: "facebook" %>
+        </a>
+      </div>
     </div>
   </body>
 </html>

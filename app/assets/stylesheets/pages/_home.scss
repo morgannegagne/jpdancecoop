@@ -1,6 +1,7 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
 #home-page {
   display: flex;
   margin-top: 1.5em;
@@ -12,6 +13,16 @@
 }
 
 #home-image {
-  width: 50%;
   border-radius: 6px;
+  height: 400px;
+  object-fit: cover;
+  width: 450px;
+}
+
+.glide__slide {
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
