@@ -20,6 +20,10 @@ h1 {
   letter-spacing: 0.68px;
 }
 
+h2 {
+  letter-spacing: 0.68px;
+}
+
 p {
   line-height: 21px;
 }
@@ -82,9 +86,11 @@ p {
   height: 20px;
 }
 
-.page-title {
-  border-bottom: 4px solid $accent-color;
-  margin-top: 0;
+.title {
+  padding: 12px;
+  background: #786da6;
+  color: white;
+  border-radius: 6px;
 }
 
 .tagline {

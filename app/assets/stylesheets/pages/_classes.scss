@@ -4,17 +4,42 @@
 }
 
 .classes__class-overview {
-  border: 3px solid $accent-color;
-  margin-bottom: 24px;
-  padding: 18px;
-  text-align: center;
+  display: flex;
+}
+
+.classes__photo {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
 }
 
 .classes__class-title {
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 0.68px;
+  text-align: center;
 }
 
 .classes_class-dates {
   margin-bottom: 18px;
+}
+
+.classes__class-info {
+  padding: 0 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.classes__session {
+  text-align: center;
+}
+
+.classes__cost {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.classes__date {
+  text-align: center;
 }

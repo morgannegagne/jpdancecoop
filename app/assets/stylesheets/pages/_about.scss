@@ -25,7 +25,10 @@
 }
 
 .title {
-  border-bottom: 6px solid $accent-color;
+  padding: 12px;
+  background: #786da6;
+  color: white;
+  border-radius: 6px;
 }
 
 .divider {
