@@ -12,30 +12,29 @@
   </head>
 
   <body>
-    <div id="app-bar">
-      <div id="logo-container">
-        <%= image_tag "logo.png", alt: "JP Dance Co-op logo", id: "logo" %>
-        <div id="social-media-links">
-          <a href="mailto:JPDanceCoop@gmail.com">
-            <%= image_tag "email.png", id: "email" %>
-          </a>
-          <a href="https://www.facebook.com/JPDanceCoop/">
-            <%= image_tag "facebook.svg", id: "facebook" %>
-          </a>
+    <div id="app">
+      <div id="app-bar">
+        <div id="logo-container">
+          <%= image_tag "logo.png", alt: "JP Dance Co-op logo", id: "logo" %>
+          <div id="social-media-links">
+            <a href="mailto:JPDanceCoop@gmail.com">
+              <%= image_tag "email.png", id: "email" %>
+            </a>
+            <a href="https://www.facebook.com/JPDanceCoop/">
+              <%= image_tag "facebook.svg", id: "facebook" %>
+            </a>
+          </div>
+        </div>
+        <div id="navlinks">
+          <%= active_link_to "Home", "/", active: :exclusive, class: "navlink" %>
+          <%= active_link_to "About", "/about", class: "navlink" %>
+          <%= active_link_to "Classes+Events", "/classes", class: "navlink" %>
+          <%= active_link_to "Contact", "/contact", class: "navlink" %>
         </div>
       </div>
-      <div id="navlinks">
-        <%= active_link_to "Home", "/", active: :exclusive, class: "navlink" %>
-        <%= active_link_to "About", "/about", class: "navlink" %>
-        <%= active_link_to "Classes+Events", "/classes", class: "navlink" %>
-        <%= active_link_to "Contact", "/contact", class: "navlink" %>
-      </div>
-    </div>
 
-    <div id="page-content">
       <%= yield %>
     </div>
-
     <div id="footer">
       <div>
         © JP Dance Co-Op, 2020 | jpdancecoop@gmail.com

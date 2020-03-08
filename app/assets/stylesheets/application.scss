@@ -2,6 +2,7 @@
 @import "pages/*";
 
 body {
+  background: rgb(251, 251, 251);
   margin: 0;
   font-family: "Roboto", serif;
 }
@@ -35,11 +36,16 @@ p {
   position: relative;
 }
 
-#app-bar {
-  padding: 24px 0;
+#app {
+  background: white;
   min-width: 768px;
   max-width: 900px;
   margin: auto;
+}
+
+#app-bar {
+  background: white;
+  padding: 24px 0;
 }
 
 #social-media-links {
@@ -68,10 +74,9 @@ p {
   width: 50%;
 }
 
-#page-content {
-  min-width: 768px;
-  max-width: 900px;
-  margin: auto;
+.page-content {
+  padding-right: 36px;
+  padding-left: 36px;
 }
 
 .navlink.active {
@@ -90,7 +95,6 @@ p {
   padding: 12px;
   background: #786da6;
   color: white;
-  border-radius: 6px;
 }
 
 .tagline {

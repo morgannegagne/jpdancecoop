@@ -3,10 +3,7 @@
 }
 
 .bio__headshot {
-  margin-right: 24px;
-
   img {
-    border-radius: 4px;
     height: 150px;
     width: 150px;
   }
@@ -22,13 +19,6 @@
 
 .instructor-info {
   display: flex;
-}
-
-.title {
-  padding: 12px;
-  background: #786da6;
-  color: white;
-  border-radius: 6px;
 }
 
 .divider {
